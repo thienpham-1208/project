@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3d88fa6639c9463d85260309c03bb68",
+    "content-hash": "e4ade158668795ce6ba6c7bd9ef250f1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -981,6 +981,47 @@
             "time": "2021-03-02T16:53:12+00:00"
         },
         {
+            "name": "laroute/laroute",
+            "version": "1.0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Fenzland/Laroute.git",
+                "reference": "8a6fdbbd5c4beb71fb46a38d8f212f541ff15746"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Fenzland/Laroute/zipball/8a6fdbbd5c4beb71fb46a38d8f212f541ff15746",
+                "reference": "8a6fdbbd5c4beb71fb46a38d8f212f541ff15746",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": ">=5.0",
+                "illuminate/routing": ">=5.0",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laroute\\": "libs/"
+                },
+                "files": [
+                    "libs/main.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fenz",
+                    "email": "uukoo@163.com"
+                }
+            ],
+            "description": "A high readablility route syntax for Laravel",
+            "time": "2017-07-28T08:48:39+00:00"
+        },
+        {
             "name": "league/commonmark",
             "version": "1.6.6",
             "source": {
@@ -1216,6 +1257,57 @@
                 }
             ],
             "time": "2021-01-18T20:58:21+00:00"
+        },
+        {
+            "name": "lord/laroute",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aaronlord/laroute.git",
+                "reference": "d71fab4d04604726e863df3658d783505e991349"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aaronlord/laroute/zipball/d71fab4d04604726e863df3658d783505e991349",
+                "reference": "d71fab4d04604726e863df3658d783505e991349",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0",
+                "illuminate/console": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0",
+                "illuminate/filesystem": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0",
+                "illuminate/routing": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0",
+                "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lord\\Laroute\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Lord",
+                    "email": "hello@aaronlord.is"
+                }
+            ],
+            "description": "Access Laravels URL/Route helper functions, from JavaScript.",
+            "keywords": [
+                "javascript",
+                "laravel",
+                "routes",
+                "routing"
+            ],
+            "time": "2021-02-19T15:46:10+00:00"
         },
         {
             "name": "monolog/monolog",

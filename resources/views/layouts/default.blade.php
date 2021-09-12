@@ -27,8 +27,8 @@
     @yield('appCss')
 
     <link rel="stylesheet" href="/theme/ag/argon.min.css?v=1.2.0" type="text/css">
+    <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}" type="text/css">
     <link rel="stylesheet" href="{{ asset(mix('css/custom.css')) }}" type="text/css">
-
 </head>
 
 <body class="g-sidenav-show g-sidenav-pinned  @yield('additional-class')">
@@ -49,6 +49,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/laroute.js') }}"></script>
     @yield('appScript')
 </body>
 
