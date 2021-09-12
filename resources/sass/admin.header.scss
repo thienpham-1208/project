@@ -1,0 +1,13 @@
+@import "variables";
+.header {
+    max-height: 70px;
+    padding: 50px 20px;
+    border-bottom: 2px solid $black;
+}
+
+.date-now {
+    text-align: right;
+    img {
+        width: 30px;
+    }
+}

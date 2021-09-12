@@ -21,7 +21,7 @@ fs.readdirSync('./resources/sass').forEach(file => {
         .version()
 });
 fs.readdirSync('./resources/js/pages').forEach(file => {
-    mix.js(`./resources/js/pages/${file}/index.js`, `public/js/page_${file}.js`)
+    mix.js(`./resources/js/${file}/index.js`, `public/js/page_${file}.js`)
         .version()
 });
 mix.webpackConfig({
