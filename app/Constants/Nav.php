@@ -11,7 +11,7 @@ class Nav
             'icon' => 'setting.png',
         ],
         [
-            'url' => '',
+            'url' => 'admin.category.index',
             'name' => 'Quản lí thể loại',
             'icon' => 'setting.png',
         ],

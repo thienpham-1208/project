@@ -24,7 +24,6 @@
                                 <a a="{{ $parentName }}"
                                     class="nav-link {{ $parentName && strpos(\Request::route()->getName(), $parentName) !== false ? 'active' : '' }}"
                                     href="{{ $url }}">
-                                    {{-- <i class="{{ $nav['icon'] }} text-primary"></i> --}}
                                     <img src="{{ asset('images/icons/' . $nav['icon']) }}" alt="" width="20px">
                                     <span class="nav-link-text">{{ $nav['name'] }}</span>
                                 </a>

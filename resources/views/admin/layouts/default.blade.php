@@ -28,7 +28,4 @@
 
 @section('appScript')
     @yield('scripts')
-    <script>
-
-    </script>
 @endsection
