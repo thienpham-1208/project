@@ -1,0 +1,283 @@
+@import "variables";
+body,
+h1,
+h2,
+h3,
+h4,
+th,
+td {
+    color: $black;
+}
+
+.table thead th,
+.table td,
+.table th {
+    font-size: 14px;
+}
+
+.main-content {
+    z-index: 9999 !important;
+    margin-left: 60px !important;
+}
+
+button:disabled {
+    pointer-events: none
+}
+
+.header {
+    .row-header {
+        .img-logo {
+            left: 0;
+            transform: translate(0, -50%);
+            display: none;
+        }
+    }
+}
+
+.img-datepicker {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.daterangepicker {
+    z-index: 10000 !important;
+}
+
+.management {
+    .pageName {
+        border-top: 1px solid #231916;
+        border-bottom: 1px solid #231916;
+        text-align: center;
+        h2 {
+            font-size: 21px;
+            color: #000000;
+            padding: 19px 0;
+            margin-bottom: 0;
+        }
+    }
+    .breadcrumb {
+        background-color: unset;
+        font-size: 14px;
+        padding-left: 0px;
+        margin-bottom: 5px;
+    }
+    .breadcrumb-item:not(:first-child)::before {
+        content: "\3E";
+    }
+}
+
+.group-button-top {
+    .btn {
+        padding: .425rem 1rem;
+    }
+    .btn-group a.btn-ct-primary {
+        margin-right: 10px;
+    }
+}
+
+a.btn-ct-primary {
+    background-color: white;
+    border: 1px solid #b2b2b2;
+    border-radius: 100px !important;
+    color: #231916;
+    &:active {
+        background-color: #69c2ee;
+        color: #231916;
+        border: 1px solid #231916;
+    }
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+    }
+}
+
+a.active-primary {
+    background-color: #69c2ee;
+    border-color: #69c2ee;
+    opacity: 1 !important;
+}
+
+.button-default {
+    background-color: white;
+    color: #231916;
+    border: 1px solid #231916;
+    border-radius: 100px !important;
+    &:active {
+        background-color: gray;
+        color: white;
+    }
+}
+
+.order-item-sort {
+    position: relative;
+    margin: 12px 0 0 0;
+    top: -11px;
+    p {
+        width: 50px;
+        margin: 0 0 0 36px;
+    }
+    button {
+        height: 0px;
+        outline: none;
+        border: none;
+        background: initial;
+        i {
+            font-size: 42px;
+        }
+    }
+    button.up {
+        position: absolute;
+        right: 37px;
+        top: -5px;
+    }
+    button.down {
+        position: absolute;
+        right: 0;
+        top: -23px;
+    }
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.bg-edit {
+    background-color: $white;
+}
+
+.bg-delete {
+    background-color: $bgDeleted;
+}
+
+.table-shadown {
+    box-shadow: 0px 4px 12px -4px rgb(0 0 0 / 20%);
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid $colorBorderTable;
+    .th-shadown {
+        border: 1px solid #EAEAEA;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 6px 6px 0px 0px;
+    }
+    th,
+    td {
+        border: 1px solid $gray1;
+    }
+    thead th {
+        border-bottom: 1px solid $gray1;
+    }
+}
+
+.table-shadown-nborder {
+    box-shadow: 0px 4px 12px -4px rgb(0 0 0 / 20%);
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid $colorBorderTable;
+}
+
+.stt {
+    width: 50px;
+}
+
+.search-month {
+    span.month {
+        margin-left: 20px;
+        color: $black;
+        a {
+            cursor: pointer;
+            padding: 6px;
+            &:active {
+                color: $white;
+                border-color: $bgSearchMonth;
+                background-color: $bgSearchMonth;
+                box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+                border-radius: .25rem;
+            }
+        }
+        a.month-button.selected {
+            color: $white;
+            border-color: $bgSearchMonth;
+            background-color: $bgSearchMonth;
+            box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+            border-radius: .25rem;
+        }
+    }
+    span.perPage {
+        margin-bottom: 6px;
+        font-size: 17px;
+        color: $black;
+        margin-right: 20px;
+    }
+    p span {
+        font-size: 22px;
+        font-weight: 500;
+        margin-left: 15px;
+    }
+    .fa-angle-left {
+        font-size: 24px;
+        color: $black;
+        margin-right: 10px;
+    }
+    .fa-angle-right {
+        font-size: 24px;
+        color: $black;
+        margin-left: 10px;
+    }
+}
+
+.row-down-up {
+    white-space: nowrap;
+    p {
+        margin-bottom: 0;
+    }
+    .w-button {
+        width: 30px;
+        display: inline-block;
+    }
+    .th-down-up {
+        position: relative;
+        right: 0px;
+        top: -23px;
+        font-size: 27px;
+        .th-up {
+            position: absolute;
+            right: 10px;
+            top: -5px;
+        }
+        .th-down {
+            position: absolute;
+            right: -5px;
+            top: -18px;
+        }
+        button {
+            height: 0px;
+            outline: none;
+            border: none;
+            background: initial;
+        }
+    }
+}
+
+.stt-text {
+    width: 80px;
+    white-space: break-spaces !important;
+}
+
+.form-control {
+    border: 1px solid $dark1;
+    color: $black;
+}
+
+.form-control:focus {
+    color: $black;
+}
+
+@media (max-width: 1440px) {
+    .stt-text {
+        width: 70px;
+    }
+}
