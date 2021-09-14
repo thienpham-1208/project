@@ -23,9 +23,9 @@ class CreateCategoryRequest extends FormRequest
      */
     public function rules()
     {
-        $rules['name'] = 'required|unique:categories,name';
+        $rules['name'] = 'required|unique:categories,name,0,id,deleted_at,NULL';
         if ($this->id) {
-            $rules['name'] = 'required|unique:categories,name,' . $this->id;
+            $rules['name'] = 'required|unique:categories,name,' . $this->id . ',id,deleted_at,NULL';
             $rules['slug'] = 'required';
         }
         return $rules;

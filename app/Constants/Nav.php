@@ -16,7 +16,7 @@ class Nav
             'icon' => 'setting.png',
         ],
         [
-            'url' => '',
+            'url' => 'admin.dish.index',
             'name' => 'Quản lí món ăn',
             'icon' => 'setting.png',
         ],

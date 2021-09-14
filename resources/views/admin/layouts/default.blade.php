@@ -15,7 +15,7 @@
 @endsection
 
 @section('appContent')
-    <div class="management">
+    <div class="management-main">
         <div class="container">
             @yield('content')
         </div>
