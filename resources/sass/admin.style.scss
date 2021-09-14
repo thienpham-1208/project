@@ -49,17 +49,8 @@ button:disabled {
     padding-left: 0px !important;
 }
 
-.management {
-    margin-top: 20px;
-    .breadcrumb {
-        background-color: unset;
-        font-size: 14px;
-        padding-left: 0px;
-        margin-bottom: 5px;
-    }
-    .breadcrumb-item:not(:first-child)::before {
-        content: "\3E";
-    }
+.management-main {
+    padding-top: 40px;
 }
 
 .group-button-top {
@@ -271,8 +262,11 @@ a.active-primary {
     color: $black;
 }
 
-.fa-pencil-square-o {
+.table .fa {
     font-size: 16px;
+}
+
+.fa-pencil-square-o {
     color: $blue1;
 }
 

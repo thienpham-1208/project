@@ -1,0 +1,22 @@
+@import "variables";
+table#table-list-dish {
+    margin-top: 50px;
+    tr,
+    th,
+    td {
+        font-size: 0.8rem;
+    }
+    td:not(:nth-child(3)) {
+        padding-top: 110px;
+    }
+    td:nth-child(3) {
+        width: 300px;
+    }
+    .link-action {
+        display: flex;
+        justify-content: space-evenly;
+        span {
+            cursor: pointer;
+        }
+    }
+}

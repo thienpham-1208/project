@@ -26,4 +26,12 @@ Route::namespace('Admin')
         Route::get('category/{id}/edit', 'CategoryController@edit')->name('category.edit');
         Route::post('category/{id}/update', 'CategoryController@update')->name('category.update');
         Route::post('category/{id}/delete', 'CategoryController@delete')->name('category.delete');
+
+        Route::get('dish', 'DishController@index')->name('dish.index');
+        Route::get('dish/create', 'DishController@create')->name('dish.create');
+        Route::post('dish/store', 'DishController@store')->name('dish.store');
+        Route::get('dish/{id}/edit', 'DishController@edit')->name('dish.edit');
+        Route::post('dish/{id}/update', 'DishController@update')->name('dish.update');
+        Route::post('dish/{id}/delete', 'DishController@delete')->name('dish.delete');
+        Route::post('dish/{id}/update-display', 'DishController@updateDisplay')->name('dish.update.display');
     });

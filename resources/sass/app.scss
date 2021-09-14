@@ -1,4 +1,8 @@
 @import "variables";
+* {
+    padding: 0px;
+}
+
 #loading {
     background-color: white;
     position: fixed;
@@ -86,6 +90,10 @@ button:disabled {
     pointer-events: none
 }
 
+.btn.disabled {
+    background-color: $btnDisable;
+}
+
 .modal-backdrop.show {
     opacity: 0;
 }
@@ -114,5 +122,20 @@ ul li {
 
 .error {
     color: $red;
-    margin-top: -10px;
+    font-weight: 500;
+}
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.group-button {
+    margin-bottom: 40px;
+    .btn-item {
+        border: 1px solid $gray;
+        border-radius: 20px;
+        padding: 7px 10px;
+        width: 160px;
+    }
 }
