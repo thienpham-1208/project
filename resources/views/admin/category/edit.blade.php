@@ -8,8 +8,12 @@
     <h2>Quản lí thể loại món ăn</h2>
 @endsection
 @section('content')
+    <div class="group-button">
+        <a href="{{ route('admin.category.index') }}" class="btn btn-item">Quản lí loại món ăn</a>
+        <a href="#" class="btn btn-item active-primary">Sửa loại món ăn</a>
+    </div>
     <div class="row">
-        <div class="col-lg-5 col-md-5">
+        <div class="col col-lg-5 col-md-5">
             <form action="{{ route('admin.category.update', $category->id) }}" method="post">
                 @csrf
                 <div class="form-group">
