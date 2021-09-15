@@ -8,7 +8,7 @@ class Nav
         [
             'url' => '',
             'name' => 'Quản lí đơn hàng',
-            'icon' => 'setting.png',
+            'icon' => 'order.png',
         ],
         [
             'url' => 'admin.category.index',
@@ -18,7 +18,12 @@ class Nav
         [
             'url' => 'admin.dish.index',
             'name' => 'Quản lí món ăn',
-            'icon' => 'setting.png',
+            'icon' => 'dish.png',
+        ],
+        [
+            'url' => 'admin.table.index',
+            'name' => 'Quản lí bàn ăn',
+            'icon' => 'table.png',
         ],
         [
             'url' => '',
@@ -33,7 +38,7 @@ class Nav
         [
             'url' => '',
             'name' => 'Quản lí người dùng',
-            'icon' => 'customer.png',
+            'icon' => 'icon_list_user.png',
         ],
     ];
 }

@@ -34,4 +34,10 @@ Route::namespace('Admin')
         Route::post('dish/{id}/update', 'DishController@update')->name('dish.update');
         Route::post('dish/{id}/delete', 'DishController@delete')->name('dish.delete');
         Route::post('dish/{id}/update-display', 'DishController@updateDisplay')->name('dish.update.display');
+
+        Route::get('table', 'Tablecontroller@index')->name('table.index');
+        Route::post('table/create', 'TableController@store')->name('table.create');
+        Route::get('table/{id}/edit', 'TableController@edit')->name('table.edit');
+        Route::post('table/{id}/update', 'TableController@update')->name('table.update');
+        Route::post('table/{id}/delete', 'TableController@delete')->name('table.delete');
     });
