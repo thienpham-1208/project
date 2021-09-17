@@ -82,6 +82,15 @@ body {
     }
 }
 
+.frontend {
+    background-color: orange;
+    .main-page {
+        width: 85%;
+        margin: 0px auto;
+        background-color: white;
+    }
+}
+
 .main-page {
     display: flex;
 }
